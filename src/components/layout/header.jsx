@@ -4,7 +4,7 @@ import { Search } from 'react-bootstrap-icons';
 
 const Header = () => {
     return (
-        <Stack direction="horizontal" gap={3} className='position-fixed align-items-center justify-content-between bg-white ' style={{ left: '12%', width: '88%', height: '100px' }}>
+        <Stack direction="horizontal" gap={3} className='position-fixed align-items-center justify-content-between bg-white ' style={{ left: '12%', width: '88%', height: '100px', zIndex: '100' }}>
             <InputGroup className="w-25">
                 <Button id="button-addon1" style={{ background: 'transparent', border: 'none' }}>
                     <Search color="#D0D3D8" size={20} />
