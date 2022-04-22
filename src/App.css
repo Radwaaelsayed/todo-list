@@ -1,38 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App .column {
+  width: 30%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.droppable-col {
+  width: 100%;
+  background-color: white;
+  padding: 10px 10px 20px 10px;
+  border-radius: 7px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.item {
+  margin-bottom: 10px;
+  background-color: gray;
   color: white;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 7px;
 }
 
-.App-link {
-  color: #61dafb;
+.item.dragging {
+  opacity: 0.5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.react-date-picker{
+  width: 100%;
+}
+
+.react-date-picker__wrapper{
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border-color: #80808082;
 }
